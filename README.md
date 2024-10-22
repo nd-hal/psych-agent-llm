@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # fair-psych-nlp
 Dataset and code for fair psychometric NLP.
 
@@ -21,3 +22,6 @@ If you use this repository please cite the accompanying paper:
     pages = "3748--3758",
 }
 ```
+=======
+For current work please refer to Individual.ipynb
+>>>>>>> 19eb6b0a63997f980745f69959877a6ccc9b8ddb

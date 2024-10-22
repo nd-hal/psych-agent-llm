@@ -77,3 +77,8 @@ face validity
 1. What attitude did they display on each paragraph on a scale of "extremely disagree", "moderately disagree", "neutral", "moderately agree", "extremely agree"？”
 2. Rate the difference between two paragraph's attitudes range from 0 to 10. 0 means completely different (for instance, one is "extremely disagree" while the other is "extremely agree"),  2 means highly different (for instance, one is "moderately disagree" while the other is "extremely agree"), and so on, finally 10 means completely same (for instance, one is "extremely agree" while the other is also "extremely agree")
 '
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4575598
+
+https://aclanthology.org/2020.acl-main.704/
+
+

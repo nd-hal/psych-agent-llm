@@ -1,11 +1,14 @@
 
 
 
-Text_Numeracy = "Please In a few sentences, please describe an experience in your life that demonstrated your knowledge of health or medical issues."
-Text_Anxiety = "Do you feel anxiety when you meet doctors? In a few sentences, please describe what makes you feel most anxious or worried when visiting the doctor's office."
+Text_Numeracy = "In a few sentences, please describe an experience in your life that demonstrated your knowledge of health or medical issues."
+Text_Anxiety = "In a few sentences, please describe what makes you feel most anxious or worried when visiting the doctor's office."
 Text_TrustPhys = "In a few sentences, please explain the reasons why you trust or distrust your primary care physician. If you do not have a primary care physician, please answer in regard to doctors in general."
-Text_SubjectiveLit = "To what degree do you feel you have the capacity to obtain, process, and understand basic health information and services needed to make appropriate health decisions? Please explain your answer in a few sentences."
+Text_SubjectiveLit = "In a few sentences, please describe to what degree do you feel you have the capacity to obtain, process, and understand basic health information and services needed to make appropriate health decisions?"
 
+#"To what degree do you feel you have the capacity to obtain, process, and understand basic health information and services needed to make appropriate health decisions? Please explain your answer in a few sentences."
+
+#BLEU/ROUGE
 
 demographic_list = [
     "D1",

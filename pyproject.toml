@@ -16,6 +16,7 @@ scikit-learn = "^1.5.2"
 matplotlib = "^3.9.2"
 seaborn = "^0.13.2"
 replicate = "^1.0.2"
+tiktoken = "^0.8.0"
 
 
 [build-system]

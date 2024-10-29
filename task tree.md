@@ -1,5 +1,7 @@
 ## Task Tree
 
+Overleaf link ： https://www.overleaf.com/project/66bcff406182df228b8367bf
+
 ## Group Simulation
 ### Some Questions
 
@@ -7,7 +9,7 @@
 
 ### Prompt design 
    - **Unified System Prompt**: Establish a common **system prompt** that describes the overall characteristics of the group. For example:
-     ```text
+     ```texts
      You are a professional assistant helping female engineers. This group is typically logical, detail-oriented, and faces career challenges related to work-life balance.
      ```
    - **Personalized User Prompts**: Provide individualized **user prompts** with unique personal details. For example:
@@ -44,13 +46,10 @@ can generative ai improve social science?
 
 
 ## Individual Simulation
- Test the agents with different types of input data (e.g., straightforward factual questions vs. complex scenario-based queries) to see how well they handle varying information complexities
-demo + beha+ psych
+ Test the agents with different types of input data (e.g., straightforward factual questions vs. complex scenario-based queries) to see how well they handle varying information complexities. we used 
 testing on the same people(200 random datapoints)-- comparing generated text and real text
 1. all 4 prompts
-2. conditioning on questions 
-- all 4 
-- given3, hold 1
+2. conditioning on questions （given3, hold 1）
 
 2 baselines
 - no system prompt
@@ -80,5 +79,3 @@ face validity
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4575598
 
 https://aclanthology.org/2020.acl-main.704/
-
-

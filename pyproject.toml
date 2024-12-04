@@ -17,6 +17,7 @@ matplotlib = "^3.9.2"
 seaborn = "^0.13.2"
 replicate = "^1.0.2"
 tiktoken = "^0.8.0"
+sentence-transformers = "^3.3.1"
 
 
 [build-system]

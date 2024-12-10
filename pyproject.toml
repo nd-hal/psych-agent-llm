@@ -18,6 +18,7 @@ seaborn = "^0.13.2"
 replicate = "^1.0.2"
 tiktoken = "^0.8.0"
 sentence-transformers = "^3.3.1"
+ridgeplot = "^0.3.0"
 
 
 [build-system]

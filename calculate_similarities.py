@@ -72,7 +72,7 @@ def calculate_similarity_bert(results_df):
                 #true_embedding = get_bert_embedding(true_label)
             except:
                 continue
-            similarities = model.similarity(embeddings, embeddings)
+            similarity = model.similarity(embeddings, embeddings)
             #similarity = 1 - cosine(generated_embedding, true_embedding)
             #similarity = similarities[0][1].detach().item()
             
@@ -91,4 +91,4 @@ def calculate_similarity_bert(results_df):
 
 # Perform similarity evaluation
 similarity_df_bert_orig = calculate_similarity_bert(results_df)
-similarity_df_bert_orig.to_csv(f"similarity_calculations_{dataInput}_bert_CLS.csv")
+similarity_df_bert_orig.to_csv(f"similarity_calculations_{dataInput}_{sbert_model}.csv")

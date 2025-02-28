@@ -26,15 +26,16 @@ dataInput = args.data
 model = SentenceTransformer(sbert_model)
 #model = SentenceTransformer("all-mpnet-base-v2")
 
-results_df = pd.read_csv(f"~/data/psychagents/experiment_results_{dataInput}.csv")
+#results_df = pd.read_csv(f"~/data/psychagents/experiment_results_{dataInput}.csv")
+results_df = pd.read_csv(f"./Data/experiment_results_{dataInput}.csv")
 
 # Load BERT model and tokenizer
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-bert_version = 'bert-base-uncased'
+#bert_version = 'bert-base-uncased'
 #'mnaylor/psychbert-finetuned-mentalhealth'
-tokenizer = BertTokenizer.from_pretrained(bert_version)
-model = BertModel.from_pretrained(bert_version)
+#tokenizer = BertTokenizer.from_pretrained(bert_version)
+#model = BertModel.from_pretrained(bert_version)
 model = model.eval()
 model = model.to(device)
 
@@ -65,14 +66,14 @@ def calculate_similarity_bert(results_df):
             ]
 
             try:
-                #embeddings = model.encode(sentences)
+                embeddings = model.encode(sentences)
                 #print(embeddings.shape)
-                generated_embedding = get_bert_embedding(generated_response)
-                true_embedding = get_bert_embedding(true_label)
+                #generated_embedding = get_bert_embedding(generated_response)
+                #true_embedding = get_bert_embedding(true_label)
             except:
                 continue
-            #similarities = model.similarity(embeddings, embeddings)
-            similarity = 1 - cosine(generated_embedding, true_embedding)
+            similarities = model.similarity(embeddings, embeddings)
+            #similarity = 1 - cosine(generated_embedding, true_embedding)
             #similarity = similarities[0][1].detach().item()
             
             similarity_results.append({

@@ -7,7 +7,7 @@
 #$ -N simCalc       # Specify job name
 #$ -t 1-2              # Specify number of tasks in array
 
-#$SGE_TASK_ID
+$SGE_TASK_ID
 
 
 if [[ "$SGE_TASK_ID" == "1" ]]; then

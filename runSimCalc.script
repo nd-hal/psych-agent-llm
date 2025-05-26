@@ -1,18 +1,21 @@
 #!/bin/bash
 
-#$ -M jlalor1@nd.edu   # Email address for job notification
-#$ -m abe            # Send mail when job begins, ends and aborts
-#$ -q gpu           # Specify queue
+#$ -q gpu@@coba-a40           # Specify queue
 #$ -l gpu_card=1     # Run on 1 GPU card
 #$ -N simCalc       # Specify job name
-#$ -t 1-2              # Specify number of tasks in array
+#$ -t 1-6              # Specify number of tasks in array
 
 $SGE_TASK_ID
 
 
-if [[ "$SGE_TASK_ID" == "1" ]]; then
-   poetry run python calculate_similarities.py -m all-MiniLM-L6-v2 -d 4o_all
-else
-   poetry run python calculate_similarities.py -m all-mpnet-base-v2 -d llama_all
-fi
+# 1 MiniLM 4o
+# 2 MiniLM Llama
+# 3 mpnet 4o
+# 4 mpnet Llama
+# 5 bertcls 4o
+# 6 bertcls Llama
 
+
+
+#poetry run python calculate_similarities.py -m ${m[$SGE_TASK_ID]} -d 4o_newnoprompt ${l[$SGE_TASK_ID]}
+poetry run python calculate_similarities.py -t $SGE_TASK_ID

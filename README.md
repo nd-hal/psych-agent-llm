@@ -13,13 +13,23 @@ The project explores how well LLMs can simulate patient responses in psychologic
 ## Repository Structure
 
 ```
-📂 Data/                 # Contains survey data and response datasets
-📂 Scripts/              # Python scripts for data processing and model evaluation
-📜 .gitattributes       # Git configuration file
-📜 README.md            # This file
-📜 poetry.lock          # Dependency lock file for reproducibility  
-📜 pyproject.toml       # Poetry dependency management configuration
-📜 requirements.txt     # Python package dependencies
+📂 Data/                      # Contains survey data and response datasets
+📂 json_datasets/            # Generated JSON datasets for model training
+📂 results/                  # Output results from experiments
+📂 plots/                    # Generated visualization plots
+📂 fairness_plots/          # Fairness analysis visualization plots
+📜 calculate_rouge.ipynb     # Notebook for calculating ROUGE scores
+📜 calculate_similarities.py # Script for computing response similarities
+📜 configures.py            # Configuration settings
+📜 utils.py                 # Utility functions and helper methods
+📜 json_files_generation.py # Script for generating training data in JSON format
+📜 Individual_LLama3.ipynb  # Main notebook for Llama 3 experiments
+📜 Individual_LLama3_FIPI.ipynb # FIPI-specific Llama 3 experiments
+📜 Fairness_Plots.ipynb     # Notebook for generating fairness analysis plots
+📜 requirements.txt         # Python package dependencies
+📜 pyproject.toml          # Poetry dependency management configuration
+📜 LICENSE                 # Project license information
+📜 README.md               # Project documentation
 ```
 
 ## Features

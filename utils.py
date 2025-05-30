@@ -1,8 +1,8 @@
 import pandas as pd
 import re
-from configures import *
+from codes.configures import *
 
-# 定义数值到自然语言的映射
+
 def map_values_to_text(column, value):
     mappings = {
         'ATQ': {

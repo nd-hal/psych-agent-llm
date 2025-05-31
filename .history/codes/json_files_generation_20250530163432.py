@@ -28,7 +28,7 @@ from umap import UMAP
 from openai import OpenAI
 
 
-from codes.utils import *
+from utils import *
 
 file_path = 'Data\\Data_SurveyPlusDemographics.txt'
 data = pd.read_csv(file_path, sep='\t', encoding='ISO-8859-1')

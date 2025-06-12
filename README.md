@@ -63,6 +63,7 @@ The main scripts are:
 
 - `json_files_generation.py` - Generates training data in JSONL format
 - `Individual_LLama3.ipynb` - Notebook for running experiments with Llama 3
+- `Individual_4o.ipynb`  - Notebook for running experiments with GPT-4o
 
 ### API Keys Required
 

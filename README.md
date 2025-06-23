@@ -75,7 +75,12 @@ Set up your API keys as environment variables:
 ```bash
 export REPLICATE_API_TOKEN="your_replicate_api_token_here"
 export OPENAI_API_KEY="your_openai_api_key_here"
+
 ```
+
+### Results
+
+Please refer to this link: https://drive.google.com/drive/folders/1e-TvHOdT1IjsqagF5l5IeovXs5SjxS57?usp=sharing
 
 ## License
 
